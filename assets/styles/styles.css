@@ -24,10 +24,15 @@ header {
   align-items: center;
 }
 
-header h1 {
+/* HEADER TEXT */
+.header-text h1 {
   font-size: 1.8rem;
+  margin-bottom: 5px;
 }
-
+.tagline {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
 header nav ul {
   list-style: none;
   display: flex;
@@ -157,6 +162,8 @@ article h3 {
 
 .card-sertifikat figure img {
   width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 8px;
   margin-top: 10px;
 }
@@ -244,8 +251,12 @@ footer {
     align-items: center;
     padding: 15px 20px;
   }
-  header h1 {
-    margin-bottom: 10px;
+  .header-text {
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
   }
   main {
     flex-direction: column;
